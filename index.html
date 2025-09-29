@@ -70,7 +70,7 @@
 
 <script>
     // Age auto-update
-    function updateAge(birthYear = 2006) { // Assuming current age is 19 in 2025
+    function updateAge(birthYear = 2006) {
         const now = new Date();
         let age = now.getFullYear() - birthYear;
         // If before April 1st, subtract 1
@@ -81,7 +81,7 @@
     }
     updateAge();
 
-    // Glitching name animation (changing characters randomly)
+    // Glitching name animation
     const glitchName = document.getElementById('glitchName');
     const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     function randomChar() {
@@ -89,10 +89,10 @@
     }
 
     function glitchEffect() {
-        let text = "Bao Tran"; // Replace with your actual name
+        let text = "Soul Merchant"; // name
         let glitchText = "";
         for (let i = 0; i < text.length; i++) {
-            if (Math.random() < 0.9) { // 30% chance to glitch each char
+            if (Math.random() < 0.9) { // % chance to change character
                 glitchText += randomChar();
             } else {
                 glitchText += text[i];
