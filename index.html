@@ -41,13 +41,14 @@
       text-shadow: 0px 0px 15px rgba(255,255,255,0.5);
     }
 
-    /* About Section (Main Focus) */
-    .about {
-      font-size: 1.2em;
+    /* About Section & Projects */
+    .about, .projects {
+      font-size: 1.1em;
       line-height: 1.8;
       margin: 0 auto 60px auto;
       max-width: 700px;
       font-style: italic;
+      font-family: "Georgia", serif;
     }
     .about ul {
       list-style-type: none;
@@ -58,14 +59,14 @@
       color: white;
     }
 
-    /* Laws Section (Smaller & Wispy with Fade-In) */
+    /* Laws Section (Readable) */
     .laws {
-      font-size: 0.8em;
+      font-size: 0.85em;
       line-height: 1.6;
       max-width: 600px;
       margin: 0 auto 60px auto;
       font-style: italic;
-      font-family: 'Great Vibes', cursive;
+      font-family: "Georgia", serif; /* Revert to readable serif */
       opacity: 0; /* start invisible */
       animation: fadeIn 3s ease-in forwards;
       animation-delay: 1.5s; /* wait before fading in */
@@ -74,12 +75,6 @@
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 0.9; transform: translateY(0); }
-    }
-
-    /* Projects */
-    .projects {
-      font-size: 0.9em;
-      margin-bottom: 60px;
     }
 
     /* Footer Cross */
@@ -110,24 +105,6 @@
   </div>
 
   <!-- Laws Section -->
-  <div class="laws">
-    <p>I. "The riddance of evil must be thorough."</p>
-    <p>II. A Dead Man Wards Off Evil</p>
-    <p>III. Pigs Are Foes, Panthers Are Friends</p>
-    <p>IV. "Success of one, is no different to the success of none."</p>
-    <p>V. Protect Our Women, We Owe It To Our Children</p>
-    <p>VI. "All children everywhere, are our responsibility"</p>
-    <p>VII. [REDACTED]</p>
-  </div>
+  <div class="l
 
-  <!-- Projects -->
-  <div class="projects">
-    <p>Projects:</p>
-    <p>[Work In Progress]</p>
-  </div>
-
-  <!-- Footer -->
-  <div class="footer">✝</div>
-  <div class="lady">All Glory To Our Lady of Holy Death</div>
-</body>
 </html>
