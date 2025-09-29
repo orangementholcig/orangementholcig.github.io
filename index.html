@@ -59,23 +59,18 @@
       color: white;
     }
 
-    /* Laws Section (fade in individually) */
-    .laws p {
+    /* Laws Section (Readable) */
+    .laws {
       font-size: 0.85em;
-      font-family: "Georgia", serif;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto 60px auto;
       font-style: italic;
+      font-family: "Georgia", serif; /* Revert to readable serif */
       opacity: 0; /* start invisible */
-      margin: 10px 0;
-      animation: fadeIn 1.5s ease-in forwards;
+      animation: fadeIn 3s ease-in forwards;
+      animation-delay: 1.5s; /* wait before fading in */
     }
-
-    .laws p:nth-child(1) { animation-delay: 1s; }
-    .laws p:nth-child(2) { animation-delay: 2s; }
-    .laws p:nth-child(3) { animation-delay: 3s; }
-    .laws p:nth-child(4) { animation-delay: 4s; }
-    .laws p:nth-child(5) { animation-delay: 5s; }
-    .laws p:nth-child(6) { animation-delay: 6s; }
-    .laws p:nth-child(7) { animation-delay: 7s; }
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
@@ -123,4 +118,11 @@
   <!-- Projects -->
   <div class="projects">
     <p>Projects:</p>
-    <
+    <p>[Work In Progress]</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">✝</div>
+  <div class="lady">All Glory To Our Lady of Holy Death</div>
+</body>
+</html>
