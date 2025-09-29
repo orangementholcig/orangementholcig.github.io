@@ -66,7 +66,6 @@
     <p>[WORK IN PROGRESS]</p>
     <div class="glow">&#10013; <!-- Glowing Christian Cross --></div>
     <p class="quote">"All Glory to La Santa Muerte"</p>
-    <div class="glow">&#128128; <!-- Glowing skull icon --></div>
 </div>
 
 <script>
@@ -90,10 +89,10 @@
     }
 
     function glitchEffect() {
-        let text = "John Doe"; // Replace with your actual name
+        let text = "Bao Tran"; // Replace with your actual name
         let glitchText = "";
         for (let i = 0; i < text.length; i++) {
-            if (Math.random() < 0.3) { // 30% chance to glitch each char
+            if (Math.random() < 0.9) { // 30% chance to glitch each char
                 glitchText += randomChar();
             } else {
                 glitchText += text[i];
@@ -101,7 +100,7 @@
         }
         glitchName.textContent = glitchText;
     }
-    setInterval(glitchEffect, 100);
+    setInterval(glitchEffect, 10);
 </script>
 
 </body>
