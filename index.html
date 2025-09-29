@@ -1,163 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Seven's Laws</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      min-height: 100%;
-      background-color: black;
-      color: white;
-      font-family: "Georgia", serif;
-      text-align: center;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VII</title>
+<style>
+    /* Basic styling */
+    body {
+        background-color: black;
+        color: white;
+        font-family: "Times New Roman", serif;
+        padding: 40px;
+    }
+    h1, h2 {
+        font-weight: bold;
+    }
+    .details, .projects, .quote {
+        margin-bottom: 40px;
+    }
+    .quote {
+        font-weight: lighter;
+        opacity: 0.5;
+        font-size: 50%;
     }
 
-    /* Background Layer */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Seven's Laws</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      min-height: 100%;
-      background-color: black;
-      color: white;
-      font-family: "Georgia", serif;
-      text-align: center;
+    /* Glitching effect */
+    .glitch {
+        display: inline-block;
+        position: relative;
+        color: white;
+        animation: glitch 1s infinite;
     }
 
-    /* Background Layer */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4e/Santa_Muerte.jpg');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      opacity: 0.08;
-      z-index: -1;
+    @keyframes glitch {
+        0% { text-shadow: 2px 0 red; }
+        20% { text-shadow: -2px 0 cyan; }
+        40% { text-shadow: 2px 2px lime; }
+        60% { text-shadow: -2px -2px magenta; }
+        80% { text-shadow: 2px -2px yellow; }
+        100% { text-shadow: 0 0 white; }
     }
 
-    /* Title */
-    h1 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 5em;
-      margin-top: 50px;
-      margin-bottom: 40px;
-      color: #f8f8ff;
-      text-shadow: 0px 0px 15px rgba(255,255,255,0.5);
+    /* Glowing icons/text */
+    .glow {
+        color: white;
+        text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+        margin: 10px 0;
+        display: inline-block;
     }
-
-    /* About & Projects */
-    .about, .projects {
-      font-size: 1.1em;
-      line-height: 1.8;
-      max-width: 700px;
-      margin: 0 auto 40px auto;
-      font-style: italic;
-      font-family: "Georgia", serif;
-    }
-    .about ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    .about li::before {
-      content: "★ ";
-      color: white;
-    }
-
-    /* Laws Section (fade in individually) */
-    .laws h2 {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-      text-decoration: underline;
-    }
-    .laws p {
-      font-size: 0.85em;
-      font-family: "Georgia", serif;
-      font-style: italic;
-      opacity: 0;
-      margin: 10px 0;
-      animation: fadeIn 1.5s ease-in forwards;
-    }
-    .laws p:nth-child(2) { animation-delay: 1s; }
-    .laws p:nth-child(3) { animation-delay: 2s; }
-    .laws p:nth-child(4) { animation-delay: 3s; }
-    .laws p:nth-child(5) { animation-delay: 4s; }
-    .laws p:nth-child(6) { animation-delay: 5s; }
-    .laws p:nth-child(7) { animation-delay: 6s; }
-    .laws p:nth-child(8) { animation-delay: 7s; }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 0.9; transform: translateY(0); }
-    }
-
-    /* Footer Cross */
-    .footer {
-      margin: 50px 0 10px 0;
-      font-size: 2em;
-    }
-
-    .lady {
-      font-size: 0.8em;
-      font-style: italic;
-      opacity: 0.8;
-      margin-bottom: 50px;
-    }
-  </style>
+</style>
 </head>
 <body>
-  <!-- Title -->
-  <h1>Seven's Laws</h1>
 
-  <!-- About Section -->
-  <div class="about">
-    <p>Details:</p>
-    <ul>
-      <li>A cybersecurity student at the University of Brighton.</li>
-      <li>A Jazz music enjoyer</li>
-    </ul>
-  </div>
+<h1>VII</h1>
 
-  <!-- Projects Section -->
-  <div class="projects">
-    <p>Projects:</p>
-    <p>[Work In Progress]</p>
-  </div>
+<div class="details">
+    <h2>Details</h2>
+    <p>Name: <span class="glitch" id="glitchName">___ ___ ____</span></p>
+    <p>Age: <span id="age">19</span></p>
+    <p>Occupation: Butcher, Beekeeper, and Student</p>
+</div>
 
-  <!-- Laws Section -->
-  <div class="laws">
-    <h2>Laws</h2>
-    <p>I. "The riddance of evil must be thorough."</p>
-    <p>II. A Dead Man Wards Off Evil</p>
-    <p>III. Pigs Are Foes, Panthers Are Friends</p>
-    <p>IV. "Success of one, is no different to the success of none."</p>
-    <p>V. Protect Our Women, We Owe It To Our Children</p>
-    <p>VI. "All children everywhere, are our responsibility"</p>
-    <p>VII. [REDACTED]</p>
-  </div>
+<div class="projects">
+    <h2>Projects</h2>
+    <p>[WORK IN PROGRESS]</p>
+    <div class="glow">&#10013; <!-- Glowing Christian Cross --></div>
+    <p class="quote">"All Glory to La Santa Muerte"</p>
+    <div class="glow">&#128128; <!-- Glowing skull icon --></div>
+</div>
 
-  <!-- Footer -->
-  <div class="footer">✝</div>
-  <div class="lady">All Glory To Our Lady of Holy Death</div>
+<script>
+    // Age auto-update
+    function updateAge(birthYear = 2006) { // Assuming current age is 19 in 2025
+        const now = new Date();
+        let age = now.getFullYear() - birthYear;
+        // If before April 1st, subtract 1
+        if (now.getMonth() < 3 || (now.getMonth() === 3 && now.getDate() < 1)) {
+            age -= 1;
+        }
+        document.getElementById('age').textContent = age;
+    }
+    updateAge();
+
+    // Glitching name animation (changing characters randomly)
+    const glitchName = document.getElementById('glitchName');
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    function randomChar() {
+        return chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+
+    function glitchEffect() {
+        let text = "John Doe"; // Replace with your actual name
+        let glitchText = "";
+        for (let i = 0; i < text.length; i++) {
+            if (Math.random() < 0.3) { // 30% chance to glitch each char
+                glitchText += randomChar();
+            } else {
+                glitchText += text[i];
+            }
+        }
+        glitchName.textContent = glitchText;
+    }
+    setInterval(glitchEffect, 100);
+</script>
+
 </body>
 </html>
