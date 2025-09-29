@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Seven's Laws</title>
+  <title>Seven's Law</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> <!-- Wispy cursive font -->
   <style>
-    /* Reset */
     body, html {
       margin: 0;
       padding: 0;
@@ -27,33 +27,27 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      opacity: 0.08; /* Adjust transparency here */
-      z-index: -1; /* Keeps it behind the text */
+      opacity: 0.08;
+      z-index: -1;
     }
 
-    /* Title Style */
+    /* Wispy Title */
     h1 {
-      font-family: "Brush Script MT", cursive;
+      font-family: 'Great Vibes', cursive;
       font-size: 4em;
-      margin-top: 100px;
-      margin-bottom: 40px;
+      margin-top: 50px;
+      margin-bottom: 20px;
       color: #f8f8ff;
       text-shadow: 0px 0px 15px rgba(255,255,255,0.5);
     }
 
-    /* Laws Style */
-    .laws {
-      font-size: 0.9em;
-      line-height: 1.8;
-      max-width: 600px;
-      margin: 0 auto 60px auto;
-      font-style: italic;
-    }
-
-    /* About Me */
+    /* About Section (Main Focus) */
     .about {
-      font-size: 0.9em;
-      margin-bottom: 60px;
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin: 0 auto 60px auto;
+      max-width: 700px;
+      font-style: italic;
     }
     .about ul {
       list-style-type: none;
@@ -62,6 +56,17 @@
     .about li::before {
       content: "★ ";
       color: white;
+    }
+
+    /* Laws Section (Smaller & Wispy) */
+    .laws {
+      font-size: 0.8em;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto 60px auto;
+      font-style: italic;
+      font-family: 'Great Vibes', cursive;
+      opacity: 0.9;
     }
 
     /* Projects */
@@ -88,7 +93,16 @@
   <!-- Title -->
   <h1>Seven's Law</h1>
 
-  <!-- Laws -->
+  <!-- About Section -->
+  <div class="about">
+    <p>Details:</p>
+    <ul>
+      <li>A cybersecurity student at the University of Brighton.</li>
+      <li>A Jazz music enjoyer</li>
+    </ul>
+  </div>
+
+  <!-- Laws Section -->
   <div class="laws">
     <p>I. "The riddance of evil must be thorough."</p>
     <p>II. A Dead Man Wards Off Evil</p>
@@ -97,15 +111,6 @@
     <p>V. Protect Our Women, We Owe It To Our Children</p>
     <p>VI. "All children everywhere, are our responsibility"</p>
     <p>VII. [REDACTED]</p>
-  </div>
-
-  <!-- About -->
-  <div class="about">
-    <p>Details:</p>
-    <ul>
-      <li>A cybersecurity student at the University of Brighton.</li>
-      <li>A Jazz music enjoyer</li>
-    </ul>
   </div>
 
   <!-- Projects -->
