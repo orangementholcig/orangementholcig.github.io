@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Seven's Laws</title>
+  <title>Seven's Law</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     body, html {
       margin: 0;
       padding: 0;
-      height: 100%;
+      min-height: 100%;
       background-color: black;
       color: white;
       font-family: "Georgia", serif;
@@ -31,22 +31,22 @@
       z-index: -1;
     }
 
-    /* Wispy Title */
+    /* Title */
     h1 {
       font-family: 'Great Vibes', cursive;
-      font-size: 4em;
+      font-size: 5em;
       margin-top: 50px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       color: #f8f8ff;
       text-shadow: 0px 0px 15px rgba(255,255,255,0.5);
     }
 
-    /* About Section & Projects */
+    /* About & Projects */
     .about, .projects {
-      font-size: 2em;
+      font-size: 1.1em;
       line-height: 1.8;
-      margin: 0 auto 60px auto;
       max-width: 700px;
+      margin: 0 auto 40px auto;
       font-style: italic;
       font-family: "Georgia", serif;
     }
@@ -59,18 +59,23 @@
       color: white;
     }
 
-    /* Laws Section (Readable) */
-    .laws {
-      font-size: 0.6em;
-      line-height: 1.6;
-      max-width: 600px;
-      margin: 0 auto 60px auto;
+    /* Laws Section (fade in individually) */
+    .laws p {
+      font-size: 0.85em;
+      font-family: "Georgia", serif;
       font-style: italic;
-      font-family: "Georgia", serif; /* Revert to readable serif */
-      opacity: 0; /* start invisible */
-      animation: fadeIn 3s ease-in forwards;
-      animation-delay: 1.5s; /* wait before fading in */
+      opacity: 0;
+      margin: 10px 0;
+      animation: fadeIn 1.5s ease-in forwards;
     }
+
+    .laws p:nth-child(1) { animation-delay: 1s; }
+    .laws p:nth-child(2) { animation-delay: 2s; }
+    .laws p:nth-child(3) { animation-delay: 3s; }
+    .laws p:nth-child(4) { animation-delay: 4s; }
+    .laws p:nth-child(5) { animation-delay: 5s; }
+    .laws p:nth-child(6) { animation-delay: 6s; }
+    .laws p:nth-child(7) { animation-delay: 7s; }
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
@@ -79,21 +84,21 @@
 
     /* Footer Cross */
     .footer {
-      margin-bottom: 50px;
+      margin: 50px 0 10px 0;
       font-size: 2em;
     }
 
     .lady {
-      font-size: 0.6em;
+      font-size: 0.8em;
       font-style: italic;
-      margin-top: 10px;
-      opacity: 0.6;
+      opacity: 0.8;
+      margin-bottom: 50px;
     }
   </style>
 </head>
 <body>
   <!-- Title -->
-  <h1>Seven's Laws</h1>
+  <h1>Seven's Law</h1>
 
   <!-- About Section -->
   <div class="about">
@@ -102,6 +107,12 @@
       <li>A cybersecurity student at the University of Brighton.</li>
       <li>A Jazz music enjoyer</li>
     </ul>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="projects">
+    <p>Projects:</p>
+    <p>[Work In Progress]</p>
   </div>
 
   <!-- Laws Section -->
@@ -113,12 +124,6 @@
     <p>V. Protect Our Women, We Owe It To Our Children</p>
     <p>VI. "All children everywhere, are our responsibility"</p>
     <p>VII. [REDACTED]</p>
-  </div>
-
-  <!-- Projects -->
-  <div class="projects">
-    <p>Projects:</p>
-    <p>[Work In Progress]</p>
   </div>
 
   <!-- Footer -->
