@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Seven's Laws</title>
+  <style>
+    /* Reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: black;
+      color: white;
+      font-family: "Georgia", serif;
+      text-align: center;
+    }
+
+    /* Background Layer */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4e/Santa_Muerte.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.08; /* Adjust transparency here */
+      z-index: -1; /* Keeps it behind the text */
+    }
+
+    /* Title Styling */
+    h1 {
+      font-family: "Brush Script MT", cursive;
+      font-size: 4em;
+      margin-top: 100px;
+      margin-bottom: 40px;
+      color: #f8f8ff;
+      text-shadow: 0px 0px 15px rgba(255,255,255,0.5);
+    }
+
+    /* Laws Styling */
+    .laws {
+      font-size: 0.9em;
+      line-height: 1.8;
+      max-width: 600px;
+      margin: 0 auto 60px auto;
+      font-style: italic;
+    }
+
+    /* About Section */
+    .about {
+      font-size: 0.9em;
+      margin-bottom: 60px;
+    }
+    .about ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .about li::before {
+      content: "★ ";
+      color: white;
+    }
+
+    /* Projects */
+    .projects {
+      font-size: 0.9em;
+      margin-bottom: 60px;
+    }
+
+    /* Footer Cross */
+    .footer {
+      margin-bottom: 50px;
+      font-size: 2em;
+    }
+
+    .lady {
+      font-size: 0.8em;
+      font-style: italic;
+      margin-top: 10px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <!-- Title -->
+  <h1>Seven's Law</h1>
+
+  <!-- Laws -->
+  <div class="laws">
+    <p>I. "The riddance of evil must be thorough."</p>
+    <p>II. A Dead Man Wards Off Evil</p>
+    <p>III. Pigs Are Foes, Panthers Are Friends</p>
+    <p>IV. "Success of one, is no different to the success of none."</p>
+    <p>V. Protect Our Women, We Owe It To Our Children</p>
+    <p>VI. "All children everywhere, are our responsibility"</p>
+    <p>VII. [REDACTED]</p>
+  </div>
+
+  <!-- About -->
+  <div class="about">
+    <p>Details:</p>
+    <ul>
+      <li>A cybersecurity student at the University of Brighton.</li>
+      <li>A Jazz music enjoyer</li>
+    </ul>
+  </div>
+
+  <!-- Projects -->
+  <div class="projects">
+    <p>Projects:</p>
+    <p>[Work In Progress]</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">✝</div>
+  <div class="lady">All Glory To Our Lady of Holy Death</div>
+</body>
+</html>
